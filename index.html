@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBattle 2026 | Code. Compete. Conquer.</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div>
+                <a href="index.html" class="logo">Byte<span class="highlight">Battle</span> <span
+                        class="year">2026</span></a>
+                <p class="org-subtitle">Organized by LNCT MCA Hackathon Club</p>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="problems.html">Problem Statements</a>
+                <a href="registration.html">Registration</a>
+                <a href="judges.html">Judges</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="index.html#contact" class="btn btn-primary sm-btn">Contact</a>
+            </nav>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="badge fade-up">🚀 Registration opening soon!</div>
+            <h1 class="glitch block-reveal" data-text="ByteBattle 2026">ByteBattle 2026</h1>
+            <p class="tagline fade-up delay-1">Code. Compete. Conquer.</p>
+            <div class="countdown fade-up delay-2" id="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="colon">:</div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="colon">:</div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="colon">:</div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <div class="hero-actions fade-up delay-3">
+                <a href="registration.html" class="btn btn-primary lg-btn">
+                    <i class="ph ph-lightning"></i> Register Now
+                </a>
+                <a href="#about" class="btn btn-secondary lg-btn">
+                    <i class="ph ph-info"></i> Learn More
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse"></div>
+                <p>Scroll Down</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-container">
+            <div class="about-text scroll-reveal">
+                <h2>Welcome to the <span class="gradient-text">Future</span></h2>
+                <p>ByteBattle 2026 is the ultimate 24-hour global hackathon where the brightest minds converge to build
+                    the future. We bring together developers, designers, and innovators to solve complex problems and
+                    push the boundaries of technology.</p>
+                <div class="stats-grid">
+                    <div class="stat-card glass-card">
+                        <h3>₹10k+</h3>
+                        <p>In Prizes</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>24 Hrs</h3>
+                        <p>Of Hacking</p>
+                    </div>
+
+                    <div class="stat-card glass-card">
+                        <h3>50+</h3>
+                        <p>Mentors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statements Preview Section -->
+    <section class="tracks section-padding" id="problems-preview">
+        <div class="container text-center">
+            <h2 class="section-title">Problem Statements <span class="gradient-text">Preview</span></h2>
+            <div class="preview-content glass-card mt-lg" style="padding: 60px 20px;">
+                <h3 class="gradient-text" style="font-size: 32px; margin-bottom: 20px;">Problem Statements Releasing
+                    Soon</h3>
+                <p style="font-size: 20px; font-style: italic; color: var(--text-muted); margin-bottom: 40px;">"We
+                    developers make the world easier."</p>
+                <a href="problems.html" class="btn btn-primary lg-btn">View Details <i
+                        class="ph ph-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline section-padding" id="timeline">
+        <div class="container text-center">
+            <h2 class="section-title scroll-reveal">Event <span class="gradient-text">Timeline</span></h2>
+            <div class="timeline-container scroll-reveal delay-1">
+                <div class="timeline-line"></div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="time">April 22, 2026</div>
+                        <h3>Registration Closes</h3>
+                        <p>Last date to register for ByteBattle.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="time">April 25, 2026</div>
+                        <h3>PPT Round</h3>
+                        <p>Initial screening and idea presentation round.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card glowing-border">
+                        <div class="time">April 26–27, 2026</div>
+                        <h3>Hackathon (Main Event) 🚀</h3>
+                        <p>24-hour hackathon where teams build and innovate.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="time">April 27, 2026</div>
+                        <h3>Mentoring & Evaluation Round</h3>
+                        <p>Expert mentors evaluate projects and guide teams before final judging.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="time">April 28, 2026</div>
+                        <h3>Prize Ceremony</h3>
+                        <p>Winners announced and prizes distributed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section class="prizes section-padding" id="prizes">
+        <div class="container text-center">
+            <h2 class="section-title scroll-reveal">Epic <span class="gradient-text">Prizes</span></h2>
+            <p class="section-subtitle scroll-reveal delay-1">Rewards for the best builders and innovators.</p>
+            <div class="prizes-grid">
+                <div class="prize-card glass-card runner-up scroll-reveal delay-1">
+                    <div class="prize-icon">
+                        <i class="ph ph-medal" style="color: var(--silver);"></i>
+                    </div>
+                    <h3>2nd Place</h3>
+                    <h2 class="prize-amount">₹3,000</h2>
+                    <div class="prize-icons-flex">
+                        <div class="glow-icon" title="Mentorship"><i class="ph ph-users"></i></div>
+                        <div class="glow-icon" title="Swag Kit"><i class="ph ph-gift"></i></div>
+                        <div class="glow-icon" title="API Credits"><i class="ph ph-terminal"></i></div>
+                    </div>
+                </div>
+                <div class="prize-card glass-card winner scroll-reveal delay-2">
+                    <div class="prize-icon">
+                        <i class="ph ph-trophy" style="color: var(--gold);"></i>
+                    </div>
+                    <h3>Grand Champion</h3>
+                    <h2 class="prize-amount">₹5,000</h2>
+                    <div class="prize-icons-flex">
+                        <div class="glow-icon gold-glow" title="Fast-track Incubation"><i class="ph ph-users"></i></div>
+                        <div class="glow-icon gold-glow" title="Premium Swag Kit"><i class="ph ph-gift"></i></div>
+                        <div class="glow-icon gold-glow" title="Premium API Credits"><i class="ph ph-terminal"></i>
+                        </div>
+                        <div class="glow-icon gold-glow" title="Pro Hardware Bundle"><i class="ph ph-cpu"></i></div>
+                    </div>
+                </div>
+                <div class="prize-card glass-card runner-up scroll-reveal delay-3">
+                    <div class="prize-icon">
+                        <i class="ph ph-medal" style="color: var(--bronze);"></i>
+                    </div>
+                    <h3>3rd Place</h3>
+                    <h2 class="prize-amount">₹2,000</h2>
+                    <div class="prize-icons-flex">
+                        <div class="glow-icon" title="Tech Mentorship"><i class="ph ph-users"></i></div>
+                        <div class="glow-icon" title="Swag Kit"><i class="ph ph-gift"></i></div>
+                        <div class="glow-icon" title="API Credits"><i class="ph ph-terminal"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-prizes scroll-reveal delay-4">
+                <h3>+ Category Prizes</h3>
+                <div class="cat-prizes-flex">
+                    <div class="cat-prize">
+                        <h4>Best AI Hack</h4>
+                        <p>₹1000</p>
+                    </div>
+                    <div class="cat-prize">
+                        <h4>Best UI/UX</h4>
+                        <p>₹1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding" id="faq">
+        <div class="container faq-container">
+            <h2 class="section-title text-center scroll-reveal">Got <span class="gradient-text">Questions?</span></h2>
+            <div class="accordion scroll-reveal delay-1">
+                <div class="accordion-item glass-card">
+                    <div class="accordion-header">
+                        <h3>Who can participate?</h3>
+                        <i class="ph ph-caret-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Anyone! Whether you're a seasoned professional, a college student, or a coding beginner,
+                            ByteBattle is open to all passionate builders globally.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-card">
+                    <div class="accordion-header">
+                        <h3>What if I don't have a team?</h3>
+                        <i class="ph ph-caret-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Don't worry! We'll have dedicated team-building sessions before the hacking begins so you can
+                            find the perfect teammates.</p>
+                    </div>
+                </div>
+                <div class="accordion-item glass-card">
+                    <div class="accordion-header">
+                        <h3>Are there team size limits?</h3>
+                        <i class="ph ph-caret-down"></i>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Teams can consist of 1 to 4 members. You can hack solo, but we highly recommend forming a
+                            team for the best experience!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organisers Section -->
+    <section class="organisers-section section-padding" id="organisers">
+        <div class="container text-center">
+            <h2 class="section-title">Meet the <span class="gradient-text">Organisers</span></h2>
+            <p class="section-subtitle">The team behind ByteBattle 2026</p>
+            <div class="organisers-grid">
+
+                <div class="organiser-card glass-card">
+                    <div class="organiser-avatar">
+                        <img src="images/aditya.jpeg" alt="Aditya Kumar Jha">
+                    </div>
+                    <h3>Aditya Kumar Jha</h3>
+                    <p>Head Organiser &amp; Event Lead</p>
+                </div>
+
+                <div class="organiser-card glass-card">
+                    <div class="organiser-avatar">
+                        <img src="images/aman.jpeg" alt="Aman Kahar">
+                    </div>
+                    <h3>Aman Kahar</h3>
+                    <p>Co-Organiser &amp; Operations Lead</p>
+                </div>
+
+                <div class="organiser-card glass-card">
+                    <div class="organiser-avatar">
+                        <i class="ph ph-user-circle"></i>
+                    </div>
+                    <h3>Gautam Jaiswani</h3>
+                    <p>Technical Lead & Backend Coordinator</p>
+                </div>
+
+                <div class="organiser-card glass-card">
+                    <div class="organiser-avatar">
+                        <img src="images/vikash.png" alt="Vikash Singh">
+                    </div>
+                    <h3>Vikash Singh</h3>
+                    <p>Community &amp; Outreach Lead</p>
+                </div>
+
+                <div class="organiser-card glass-card">
+                    <div class="organiser-avatar">
+                        <i class="ph ph-user-circle"></i>
+                    </div>
+                    <h3>Atul Kumar Patel</h3>
+                    <p>Design & Branding Lead</p>
+                </div>
+
+                <div class="organiser-card glass-card">
+                    <div class="organiser-avatar">
+                        <img src="images/ayushman.jpeg" alt="Ayushman Nema">
+                    </div>
+                    <h3>Ayushman Nema</h3>
+                    <p>Sponsorship &amp; Partnerships Lead</p>
+                </div>
+
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="organisers.html" class="btn btn-primary lg-btn">
+                    <i class="ph ph-users"></i> View All Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">Byte<span class="highlight">Battle</span> <span
+                        class="year">2026</span></a>
+                <p>Empowering the next generation of builders, hackers, and innovators. Join the revolution.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/adityakrjhaa/?hl=en" target="_blank"><i
+                            class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-discord-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html#home">Home</a>
+                <a href="problems.html">Problem Statements</a>
+                <a href="registration.html">Registration</a>
+                <a href="judges.html">Judges</a>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="#">Code of Conduct</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-col text-right">
+                <h3>Contact Us</h3>
+                <p>Questions? Reach out at</p>
+                <a href="mailto:adityakumarrjhaa@gmail.com" class="contact-email">adityakumarrjhaa@gmail.com</a>
+                <p style="margin-top: 10px; color: var(--text-main); font-weight: 500;">Phone/whatsapp: 7492001966</p>
+                <h3 style="margin-top: 30px; font-size: 16px;">Developed with ❤️ by <a
+                        href="https://www.instagram.com/adityakrjhaa/?hl=en" target="_blank"
+                        style="color: var(--primary-neon); display: inline;">Aditya Kumar Jha</a></h3>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ByteBattle Hackathon. <a href="https://www.instagram.com/adityakrjhaa/?hl=en" target="_blank"
+                    style="color: var(--primary-neon); margin-left:8px;">Developed with ❤️ by Aditya Kumar Jha <i
+                        class="ph ph-instagram-logo" style="vertical-align: middle; font-size: 1.1em;"></i></a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- WhatsApp Floating Popup -->
+    <div id="wa-popup" class="wa-popup">
+        <button class="wa-close-btn" id="wa-close" title="Close">✕</button>
+        <div class="wa-popup-inner">
+            <div class="wa-icon-wrap">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="wa-svg">
+                    <path fill="#fff" d="M16 2C8.268 2 2 8.268 2 16c0 2.49.651 4.826 1.788 6.854L2 30l7.374-1.762A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.56 11.56 0 01-5.892-1.614l-.422-.252-4.374 1.046 1.078-4.26-.276-.438A11.564 11.564 0 014.4 16C4.4 9.594 9.594 4.4 16 4.4S27.6 9.594 27.6 16 22.406 27.6 16 27.6zm6.334-8.67c-.346-.174-2.048-1.01-2.366-1.126-.318-.116-.55-.174-.78.174-.23.348-.894 1.126-1.096 1.358-.202.232-.404.26-.75.086-.346-.174-1.46-.538-2.78-1.714-1.028-.916-1.722-2.046-1.924-2.394-.202-.348-.022-.536.152-.708.156-.156.346-.406.52-.61.174-.202.232-.348.348-.578.116-.232.058-.434-.028-.61-.088-.174-.78-1.882-1.07-2.578-.282-.676-.568-.584-.78-.594l-.664-.012c-.232 0-.608.086-.926.434-.318.348-1.212 1.184-1.212 2.888 0 1.704 1.24 3.352 1.414 3.584.174.232 2.44 3.726 5.914 5.226.826.356 1.472.568 1.974.728.832.264 1.588.226 2.186.138.666-.1 2.048-.836 2.338-1.644.288-.808.288-1.5.202-1.644-.086-.144-.318-.232-.664-.406z"/>
+                </svg>
+            </div>
+            <div class="wa-text-wrap">
+                <p class="wa-title">Join our community 🚀</p>
+                <p class="wa-sub">ByteBattle WhatsApp Group</p>
+            </div>
+            <a href="https://chat.whatsapp.com/EDsmFIG40GUAs2gvWnujlZ" target="_blank" class="wa-join-btn">Join Now</a>
+        </div>
+    </div>
+
+    <!-- WhatsApp Mini Floating Button (shown after popup is closed/shrunk) -->
+    <a href="https://chat.whatsapp.com/EDsmFIG40GUAs2gvWnujlZ" target="_blank" id="wa-fab" class="wa-fab" title="Join our WhatsApp Group 🚀">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#fff" d="M16 2C8.268 2 2 8.268 2 16c0 2.49.651 4.826 1.788 6.854L2 30l7.374-1.762A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.56 11.56 0 01-5.892-1.614l-.422-.252-4.374 1.046 1.078-4.26-.276-.438A11.564 11.564 0 014.4 16C4.4 9.594 9.594 4.4 16 4.4S27.6 9.594 27.6 16 22.406 27.6 16 27.6zm6.334-8.67c-.346-.174-2.048-1.01-2.366-1.126-.318-.116-.55-.174-.78.174-.23.348-.894 1.126-1.096 1.358-.202.232-.404.26-.75.086-.346-.174-1.46-.538-2.78-1.714-1.028-.916-1.722-2.046-1.924-2.394-.202-.348-.022-.536.152-.708.156-.156.346-.406.52-.61.174-.202.232-.348.348-.578.116-.232.058-.434-.028-.61-.088-.174-.78-1.882-1.07-2.578-.282-.676-.568-.584-.78-.594l-.664-.012c-.232 0-.608.086-.926.434-.318.348-1.212 1.184-1.212 2.888 0 1.704 1.24 3.352 1.414 3.584.174.232 2.44 3.726 5.914 5.226.826.356 1.472.568 1.974.728.832.264 1.588.226 2.186.138.666-.1 2.048-.836 2.338-1.644.288-.808.288-1.5.202-1.644-.086-.144-.318-.232-.664-.406z"/>
+        </svg>
+        <span>Join our WhatsApp Group 🚀</span>
+    </a>
+</body>
+
+</html>

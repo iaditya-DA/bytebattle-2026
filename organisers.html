@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisers | ByteBattle 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .organisers-page-hero {
+            padding: 140px 0 60px;
+            text-align: center;
+        }
+        .organisers-page-hero h1 {
+            font-size: clamp(36px, 6vw, 64px);
+            margin-bottom: 16px;
+        }
+        .organisers-page-hero p {
+            color: var(--text-muted);
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+        .organisers-full-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        .organiser-card-full {
+            padding: 44px 28px;
+            text-align: center;
+            transition: var(--transition);
+            cursor: default;
+        }
+        .organiser-card-full:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
+            border-color: var(--primary-neon);
+        }
+        .organiser-avatar-full {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: rgba(0, 240, 255, 0.05);
+            border: 2px solid var(--primary-neon);
+            box-shadow: 0 0 24px rgba(0, 240, 255, 0.3), inset 0 0 15px rgba(0, 240, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            font-size: 64px;
+            color: var(--primary-neon);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .organiser-avatar-full img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 50%;
+        }
+        .organiser-card-full:hover .organiser-avatar-full {
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.55), inset 0 0 20px rgba(0, 240, 255, 0.12);
+            transform: scale(1.07);
+        }
+        .organiser-card-full h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+        .organiser-card-full p {
+            font-size: 13px;
+            color: var(--text-muted);
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        @media (max-width: 992px) {
+            .organisers-full-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 576px) {
+            .organisers-full-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div>
+                <a href="index.html" class="logo">Byte<span class="highlight">Battle</span> <span class="year">2026</span></a>
+                <p class="org-subtitle">Organized by LNCT MCA Hackathon Club</p>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="problems.html">Problem Statements</a>
+                <a href="registration.html">Registration</a>
+                <a href="judges.html">Judges</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="index.html#contact" class="btn btn-primary sm-btn">Contact</a>
+            </nav>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="organisers-page-hero">
+        <div class="container">
+            <h1 class="glitch gradient-text" data-text="Meet the Organisers">Meet the Organisers</h1>
+            <p>The passionate team powering ByteBattle 2026</p>
+
+            <div class="organisers-full-grid">
+
+                <!-- Aditya Kumar Jha -->
+                <div class="organiser-card-full glass-card">
+                    <div class="organiser-avatar-full">
+                        <img src="images/aditya.jpeg" alt="Aditya Kumar Jha">
+                    </div>
+                    <h3>Aditya Kumar Jha</h3>
+                    <p>Head Organiser &amp; Event Lead</p>
+                </div>
+
+                <!-- Aman Kahar -->
+                <div class="organiser-card-full glass-card">
+                    <div class="organiser-avatar-full">
+                        <img src="images/aman.jpeg" alt="Aman Kahar">
+                    </div>
+                    <h3>Aman Kahar</h3>
+                    <p>Co-Organiser &amp; Operations Lead</p>
+                </div>
+
+                <!-- Gautam Jaiswani -->
+                <div class="organiser-card-full glass-card">
+                    <div class="organiser-avatar-full">
+                        <i class="ph ph-user-circle"></i>
+                    </div>
+                    <h3>Gautam Jaiswani</h3>
+                    <p>Technical Lead &amp; Backend Coordinator</p>
+                </div>
+
+                <!-- Vikash Singh -->
+                <div class="organiser-card-full glass-card">
+                    <div class="organiser-avatar-full">
+                        <img src="images/vikash.png" alt="Vikash Singh">
+                    </div>
+                    <h3>Vikash Singh</h3>
+                    <p>Community &amp; Outreach Lead</p>
+                </div>
+
+                <!-- Atul Kumar Patel -->
+                <div class="organiser-card-full glass-card">
+                    <div class="organiser-avatar-full">
+                        <i class="ph ph-user-circle"></i>
+                    </div>
+                    <h3>Atul Kumar Patel</h3>
+                    <p>Design &amp; Branding Lead</p>
+                </div>
+
+                <!-- Ayushman Nema -->
+                <div class="organiser-card-full glass-card">
+                    <div class="organiser-avatar-full">
+                        <img src="images/ayushman.jpeg" alt="Ayushman Nema">
+                    </div>
+                    <h3>Ayushman Nema</h3>
+                    <p>Sponsorship &amp; Partnerships Lead</p>
+                </div>
+
+            </div>
+
+            <a href="index.html" class="btn btn-secondary lg-btn">
+                <i class="ph ph-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">Byte<span class="highlight">Battle</span> <span class="year">2026</span></a>
+                <p>Empowering the next generation of builders, hackers, and innovators. Join the revolution.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/adityakrjhaa/?hl=en" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-discord-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html#home">Home</a>
+                <a href="problems.html">Problem Statements</a>
+                <a href="registration.html">Registration</a>
+                <a href="judges.html">Judges</a>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="#">Code of Conduct</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-col text-right">
+                <h3>Contact Us</h3>
+                <p>Questions? Reach out at</p>
+                <a href="mailto:adityakumarrjhaa@gmail.com" class="contact-email">adityakumarrjhaa@gmail.com</a>
+                <p style="margin-top: 10px; color: var(--text-main); font-weight: 500;">Phone/WhatsApp: 7492001966</p>
+                <h3 style="margin-top: 30px; font-size: 16px;">Developed with ❤️ by <a href="https://www.instagram.com/adityakrjhaa/?hl=en" target="_blank" style="color: var(--primary-neon); display: inline;">Aditya Kumar Jha</a></h3>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ByteBattle Hackathon. <a href="https://www.instagram.com/adityakrjhaa/?hl=en" target="_blank" style="color: var(--primary-neon); margin-left:8px;">Developed with ❤️ by Aditya Kumar Jha <i class="ph ph-instagram-logo" style="vertical-align: middle; font-size: 1.1em;"></i></a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

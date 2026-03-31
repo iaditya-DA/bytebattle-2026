@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Temporary files
+*.log
+*.tmp
+add_credit.py
+update.py
+
+# OS files
+.DS_Store
+Thumbs.db
