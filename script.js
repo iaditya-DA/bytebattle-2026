@@ -147,4 +147,35 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('wa_dismissed', '1');
         });
     }
+
+    // 9. Template Download Popup Logic
+    const templateTrigger = document.getElementById('template-trigger-btn');
+    const templatePanel   = document.getElementById('template-panel');
+    const templateOverlay = document.getElementById('template-overlay');
+    const templateClose   = document.getElementById('template-close');
+
+    if (templateTrigger && templatePanel && templateOverlay && templateClose) {
+        const openTemplatePanel = () => {
+            templatePanel.classList.add('active');
+            templateOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeTemplatePanel = () => {
+            templatePanel.classList.remove('active');
+            templateOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        templateTrigger.addEventListener('click', openTemplatePanel);
+        templateClose.addEventListener('click', closeTemplatePanel);
+        templateOverlay.addEventListener('click', closeTemplatePanel);
+
+        // ESC key support
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && templatePanel.classList.contains('active')) {
+                closeTemplatePanel();
+            }
+        });
+    }
 });

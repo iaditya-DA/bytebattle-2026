@@ -1151,3 +1151,199 @@ ul {
     .wa-fab span { display: none; }
     .wa-fab { border-radius: 50%; padding: 14px; }
 }
+
+/* ==========================================
+   Template Download Feature Styles
+   ========================================== */
+
+/* Floating Trigger Button */
+.template-fab {
+    position: fixed;
+    right: 24px;
+    bottom: 100px;
+    z-index: 9998;
+    background: linear-gradient(45deg, var(--secondary-neon), var(--primary-neon));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(162, 0, 255, 0.4);
+    transition: var(--transition);
+    animation: template-pulse 2s infinite;
+}
+
+.template-fab i {
+    font-size: 20px;
+}
+
+.template-fab:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+    background: linear-gradient(45deg, var(--primary-neon), var(--secondary-neon));
+}
+
+@keyframes template-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(162, 0, 255, 0.6); }
+    70% { box-shadow: 0 0 0 15px rgba(162, 0, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(162, 0, 255, 0); }
+}
+
+/* Dark Overlay */
+.template-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.template-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sliding Panel */
+.template-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--glass-border);
+    z-index: 10001;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.template-panel.active {
+    transform: translateX(0);
+    border-left-color: var(--primary-neon);
+}
+
+.panel-header {
+    padding: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.close-btn:hover {
+    background: rgba(255, 0, 127, 0.2);
+    border-color: var(--accent-neon);
+    color: var(--accent-neon);
+    transform: rotate(90deg);
+}
+
+.panel-content {
+    padding: 0 40px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 240, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--primary-neon);
+    margin-bottom: 24px;
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+.template-panel h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.template-panel .description {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.download-btn {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.template-panel .note {
+    font-size: 13px;
+    color: var(--accent-neon);
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .template-panel {
+        width: 100%;
+        height: auto;
+        max-height: 90vh;
+        top: auto;
+        bottom: 0;
+        transform: translateY(100%);
+        border-left: none;
+        border-top: 1px solid var(--primary-neon);
+        border-radius: 30px 30px 0 0;
+    }
+    
+    .template-panel.active {
+        transform: translateY(0);
+    }
+    
+    .template-fab span {
+        display: none;
+    }
+    
+    .template-fab {
+        padding: 14px;
+        bottom: 90px;
+        right: 20px;
+    }
+
+    .panel-content {
+        padding: 0 30px 40px;
+    }
+}
